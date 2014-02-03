@@ -129,6 +129,9 @@ function tidypics_page_handler($page) {
 			elgg_set_page_owner_guid($owner_guid);
 		}
 	}
+
+	$owner = elgg_get_page_owner_entity();
+
 	switch ($page[0]) {
 		case "all": // all site albums
 		case "world":
